@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="674.0" prefWidth="784.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #384463 0.0%, #343336 100.0%);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KnightTourController">
+   <children>
+      <Pane layoutY="-13.0" prefHeight="40.0" prefWidth="784.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #869be4 0.0%, #ffffff 100.0%);">
+         <children>
+            <Text layoutX="167.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KNIGHT TOUR SOLUTION" textAlignment="CENTER" wrappingWidth="418.94921875">
+               <font>
+                  <Font name="Arial Bold Italic" size="33.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6200000047683716" green="0.692380964756012" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </Pane>
+      <TableView fx:id="ktSolutionBoard" layoutX="63.0" layoutY="361.0" prefHeight="299.0" prefWidth="675.0" style="-fx-background-color: radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 50.0% 50.0%, radius 50.0%, #222222 0.0%, #ffffff 0.6711%, #6684ff 100.0%);" />
+      <Text layoutX="231.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solución" textAlignment="CENTER" wrappingWidth="292.94921875">
+         <font>
+            <Font name="Arial Bold Italic" size="28.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.39814814925193787" green="0.5185185074806213" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="231.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Board" textAlignment="CENTER" wrappingWidth="292.94921875">
+         <font>
+            <Font name="Arial Bold Italic" size="28.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.39814814925193787" green="0.5185185074806213" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TextArea fx:id="ktTextArea" editable="false" layoutX="174.0" layoutY="93.0" prefHeight="221.0" prefWidth="407.0" />
+   </children>
+</AnchorPane>

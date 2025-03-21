@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="674.0" prefWidth="784.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #384463 0.0%, #343336 100.0%);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RatInAMazeController">
+   <children>
+      <Pane layoutY="-13.0" prefHeight="40.0" prefWidth="784.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #869be4 0.0%, #ffffff 100.0%);">
+         <children>
+            <Text layoutX="183.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rata En Laberinto" textAlignment="CENTER" wrappingWidth="418.94921875">
+               <font>
+                  <Font name="Arial Bold Italic" size="33.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6200000047683716" green="0.692380964756012" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el laberinto:" textAlignment="CENTER" wrappingWidth="336.94921875">
+         <font>
+            <Font name="Arial Bold Italic" size="28.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.39814814925193787" green="0.5185185074806213" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ComboBox fx:id="cbSelectMaze" layoutX="334.0" layoutY="34.0" onAction="#selectedMaze" prefWidth="150.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #222222 0.0%, #ffffff 0.6711%, #6684ff 100.0%); -fx-background-radius: 20; -fx-padding: 1;" />
+      <TableView fx:id="tvInitialMaze" layoutX="56.0" layoutY="97.0" prefHeight="237.0" prefWidth="675.0" style="-fx-background-color: radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 50.0% 50.0%, radius 50.0%, #222222 0.0%, #ffffff 0.6711%, #6684ff 100.0%);" />
+      <TableView fx:id="tvSolutionMaze" layoutX="56.0" layoutY="367.0" prefHeight="299.0" prefWidth="675.0" style="-fx-background-color: radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 50.0% 50.0%, radius 50.0%, #222222 0.0%, #ffffff 0.6711%, #6684ff 100.0%);" />
+      <Text layoutX="247.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solución:" textAlignment="CENTER" wrappingWidth="292.94921875">
+         <font>
+            <Font name="Arial Bold Italic" size="28.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.39814814925193787" green="0.5185185074806213" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="218.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laberinto Inicial:" textAlignment="CENTER" wrappingWidth="292.94921875">
+         <font>
+            <Font name="Arial Bold Italic" size="28.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.39814814925193787" green="0.5185185074806213" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>
